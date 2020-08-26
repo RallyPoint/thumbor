@@ -23,7 +23,7 @@ echo "KUBE_NAMESPACE: $KUBE_NAMESPACE";
 pwd
 
 helm upgrade --install \
-  --wait \
+  --set image.tag="$TRAVIS_COMMIT" \
   --namespace="$KUBE_NAMESPACE" \
   --create-namespace \
   "$name" \
