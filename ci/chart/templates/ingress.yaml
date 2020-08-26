@@ -20,4 +20,4 @@ spec:
           - path: /
             backend:
               serviceName: {{ template "fullname" . }}-clusteip
-              servicePort: 80
+              servicePort: 8888
