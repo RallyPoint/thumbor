@@ -4,7 +4,7 @@
 
 image:
   repository: rallypointtech/thumbor
-    tag: latest
+  tag: latest
 
 imagePullSecrets: []
 
