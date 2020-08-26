@@ -22,16 +22,12 @@ echo "KUBE_NAMESPACE: $KUBE_NAMESPACE";
 
 pwd
 
-kubectl create namespace $KUBE_NAMESPACE
-
 helm upgrade --install \
   --wait \
-  --set env.HTTP_PORT="$HTTP_PORT" \
-  --set env.RTMP_PORT="$RTMP_PORT" \
-  --set env.HLS_API="$HLS_API" \
   --namespace="$KUBE_NAMESPACE" \
+  --create-namespace \
   "$name" \
-  ci/chart/ --force
+  ci/chart/
 
 
 echo "END"

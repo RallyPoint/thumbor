@@ -8,5 +8,3 @@ image:
 
 imagePullSecrets: []
 
-#env:
-#  exemple: 80
