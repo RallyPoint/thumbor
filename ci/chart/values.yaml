@@ -7,4 +7,3 @@ image:
   tag: latest
 
 imagePullSecrets: []
-
